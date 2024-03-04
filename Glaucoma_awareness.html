@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaucoma Awareness</title>
+    <style>
+        /* Default styles */
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        
+        header {
+            background-color: #333;
+            color: orangered;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: orangered;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        /* High contrast mode */
+        body.high-contrast {
+            color: #fff; /* White text */
+            background-color: #000; /* Black background */
+        }
+        body.high-contrast header {
+            background-color: #fff; /* White background for header */
+        }
+        .high-contrast .button {
+            background-color: #fff; /* White button background */
+            color: #333; /* Dark text for button */
+        }
+
+        .high-contrast {
+        color: #fff;
+        background-color: #000;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Glaucoma</h1>
+    </header>
+
+    <section>
+        <h2>What is Glaucoma?</h2>
+        <p>Glaucoma is a group of eye conditions that damage the optic nerve, typically due to high pressure in the eye.</p>
+
+        <h2>Recognizing Glaucoma</h2>
+        <p>Symptoms of glaucoma may include blurred vision, halos around lights, severe eye pain, nausea, and vomiting. However, in most cases, glaucoma develops slowly and without noticeable symptoms.</p>
+
+        <h2>Self-Care for Glaucoma</h2>
+        <p>If you have glaucoma, it's important to follow your doctor's recommendations, which may include using prescribed eye drops, attending regular check-ups, and maintaining a healthy lifestyle.</p>
+    </section>
+
+    <button id="toggle-high-contrast">Toggle High Contrast</button>
+    
+    <script>
+        // Get the toggle button
+        var toggleButton = document.getElementById("toggle-high-contrast");
+
+        // Add a click event listener to the toggle button
+        toggleButton.addEventListener("click", function() {
+        // Get the body element
+        var body = document.getElementsByTagName("body")[0];
+        // Toggle the "high-contrast" class on the body element
+        body.classList.toggle("high-contrast");
+        });
+    </script>
+</body>
+</html>
